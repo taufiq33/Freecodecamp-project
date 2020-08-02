@@ -1,0 +1,72 @@
+html{
+    font-size: 15px
+}
+
+main#main{
+    margin: 0 auto;
+    width: 75vw;
+    background: rgba(204, 201, 201, 0.925);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+main#main h1#title{
+    text-align: center;
+    padding: 10px;
+}
+
+main#main > p{
+    text-align: center;
+    padding: 10px;
+}
+
+figure#img-div{
+    background: white;
+    padding: 10px;
+}
+
+figcaption{
+    line-height: 2;
+}
+
+img#image{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+section#tribute-info{
+    width: 45vw;
+    margin: 0 auto;
+}
+
+section#tribute-info h3#headline{
+    line-height: 3;
+}
+
+section#tribute-info ul li{
+    line-height: 3;
+}
+
+div#quotes{
+    margin: 25px auto;
+}
+
+div#quotes blockquote p{
+    font-style: italic;
+}
+
+h3#last-div{
+    text-align:center;
+}
+
+footer{
+    width: 45vw;
+    margin: 25px auto;
+}
+
+footer ol li{
+    line-height: 2;
+}
+
