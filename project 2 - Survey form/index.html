@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
 
     <title>Survey Form</title>
 
@@ -15,10 +16,127 @@
     <!-- In Codepen, we shouldn't include the body tag. So , I copy paste my source code to The Codepen workspace, start from this area -->
     <!-- 
     User Story #1: I can see a title with id="title" in H1 sized text.
+    -->
 
+    <main id="main-container">
+        <h1 id="title">SURVEI KEPUASAN PELANGGAN</h1>
+
+        <!--  
     User Story #2: I can see a short explanation with id="description" in P sized text.
+    -->
 
-    User Story #3: I can see a form with id="survey-form".
+        <p id="description">Terimakasih telah berkunjung ke restoran kami. Demi meningkatkan kualitas pelayanan dari
+            kami,
+            mohon kesediaan waktunya untuk mengisi formulir kepuasan pelanggan berikut</p>
+
+        <!-- User Story #3: I can see a form with id="survey-form". -->
+
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Nama Anda</label>
+                <input type="text" placeholder="Masukkan Nama Anda" name="name" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Alamat email anda</label>
+                <input type="email" placeholder="Masukkan alamat email Anda" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Penilaian Anda untuk pelayanan yang kami berikan (1-10) </label>
+                <input type="number" placeholder="Masukkan penilaian Anda (1-10)" name="number" id="number" min="1"
+                    max="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown" id="dropdown-label">Pilih rentang usia Anda :</label>
+                <select name="usia" id="dropdown">
+                    <option value="under12">Usia < 12 Tahun</option>
+                    <option value="12to18">Usia 13 - 18 Tahun</option>
+                    <option value="19to25">Usia 19 - 25 Tahun</option>
+                    <option value="over25">Usia > 25 Tahun</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+
+                <label for="info-restoran" id="info-restoran">Anda dapat info darimana tentang restoran ini ?</label>
+
+                <div class="radio-component">
+                    <input type="radio" name="info-restoran" id="info-teman" value="teman">
+                    <label for="info-teman" id="label-info-teman">Dari teman saya</label>
+                </div>
+
+                <div class="radio-component">
+                    <input type="radio" name="info-restoran" id="info-internet" value="internet">
+                    <label for="info-internet" id="label-info-internet">Dari internet</label>
+                </div>
+
+
+                <div class="radio-component">
+                    <input type="radio" name="info-restoran" id="info-pacar" value="pacar">
+                    <label for="info-pacar" id="label-info-pacar">Dari pacar / pasangan saya</label>
+                </div>
+
+                <div class="radio-component">
+                    <input type="radio" name="info-restoran" id="info-kebetulan" value="kebetulan">
+                    <label for="info-kebetulan" id="label-info-kebetulan">Kebetulan lewat / tidak disengaja</label>
+                </div>
+
+                <div class="radio-component">
+                    <input type="radio" name="info-restoran" id="info-lainnya" value="lainnya">
+                    <label for="info-lainnya" id="label-info-lainnya">Lainnya ...</label>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="yang-disukai" id="yang-disukai">Yang Anda sukai dari Restoran ini </label>
+
+                <div class="checkbox-component">
+                    <input type="checkbox" name="yang-disukai" id="harga-murah" value="harga murah">
+                    <label for="harga-murah" id="label-harga-murah">Harganya murah kak!</label>
+                </div>
+
+
+                <div class="checkbox-component">
+                    <input type="checkbox" name="yang-disukai" id="enak" value="enak">
+                    <label for="enak" id="label-enak">uemmmm.. Masakannya enak banget!</label>
+                </div>
+
+                <div class="checkbox-component">
+                    <input type="checkbox" name="yang-disukai" id="tempat-nyaman" value="tempat-nyaman">
+                    <label for="tempat-nyaman" id="label-tempat-nyaman">Wihh tempatnya nyaman banget kak!</label>
+                </div>
+
+                <div class="checkbox-component">
+                    <input type="checkbox" name="yang-disukai" id="parkiran-luas" value="parkiran-luas">
+                    <label for="parkiran-luas" id="label-parkiran-luas">Lapang banget kak parkirannya..</label>
+                </div>
+
+                <div class="checkbox-component">
+                    <input type="checkbox" name="yang-disukai" id="karyawan-ramah" value="karyawan-ramah">
+                    <label for="karyawan-ramah" id="label-karyawan-ramah">Seneng banget sama karyawannya, ramah dan
+                        cepat tanggap.</label>
+                </div>
+
+                <div class="checkbox-component">
+                    <input type="checkbox" name="yang-disukai" id="benci" value="benci">
+                    <label for="benci" id="label-benci">Tidak ada .. saya menyesal pernah kesini!</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="saran-kritik" id="label-saran-kritik">Saran dan kritik tambahan</label>
+                <textarea name="saran-kritik" id="saran-kritik" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit">Kirim survei</button>
+            </div>
+        </form>
+    </main>
+    <!--
 
     User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
 
